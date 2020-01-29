@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.1.19/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  hibernate:
+    ddl-auto: update
+  jackson:
+    default-property-inclusion: non_null
+
+server:
+  port: 8080
+  servlet:
+    context-path: /sell
+
+wechat:
+  mpAppId: wxd898fcb01713c658
+  mpAppSecret:
+  mchId: 1483469312
+  mchKey: 098F6BCD4621D373CADE4E832627B4F6
+  keyPath: /Applications/spring/h5.p12
+  notifyUrl: http://sasa.nat100.top/sell/pay/notify
